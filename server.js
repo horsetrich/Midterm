@@ -79,12 +79,6 @@ app.get('/api/items/search', (req, res) => {
   const query = req.query.title.toLowerCase();
   const filterBooks = books.filter(book => book.toLowerCase().includes(query));
   res.json(filterBooks);
-  
-  // ***************************************************************
-  // ***************************************************************
-  // ***************  Implement your code here  ********************
-  // ***************************************************************
-  // ***************************************************************
 
 });
 
